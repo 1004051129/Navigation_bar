@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Inconsolata', monospace;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #edf3ec;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-door-open" style="color: #abc68b;"></i></i> Home</a>
+		<a id="study" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap" style="color: #ffc340;"></i> Study</a>
+		<a id="marketing" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-chart-simple" style="color: #f85454;"></i></i> Marketing</a>
+		<a id="work" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase" style="color: #cc893e;"></i></i> Work</a>
+		<a id="self-care" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-hand-holding-heart" style="color: #6fb5d3;"></i></i> Self-care</a>
+		<a id="self-upgrade" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-arrow-up-short-wide" style="color: #b20000;"></i></i> Self-upgrade</a>
+		<a id="other" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-feather-pointed" style="color: #9bd9d0;"></i></i> Other</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/TRANG-CH-94e0090d5a2e424990a50619dfcc0699?pvs=4", '_blank').focus();
+			else if (id == 'study')
+				window.open("https://www.notion.so/H-C-T-P-e599e96b970f4af69340b722edea0102?pvs=4", '_blank').focus();
+			else if (id == 'marketing')
+				window.open("https://www.notion.so/MARKETING-9ef3ca90e0a947538fd07988d12c4cd5?pvs=4", '_blank').focus();
+			else if (id == 'work')
+				window.open("https://www.notion.so/C-NG-VI-C-823cd8af248d4d9ab222ab8766d80c12?pvs=4", '_blank').focus();
+			else if (id == 'self-care')
+				window.open("https://www.notion.so/CH-M-S-C-B-N-TH-N-c796fe6e829a4246a3bd837884034582?pvs=4", '_blank').focus();
+			else if (id == 'self-upgrade')
+				window.open("https://www.notion.so/N-NG-C-P-B-N-TH-N-a2201becdead4f3681ed892ffb2bbba1?pvs=4", '_blank').focus();
+			else if (id == 'other')
+				window.open("https://www.notion.so/Linh-Tinh-ab0eb2a7f20c4808ab46cd4c5825652c?pvs=4", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
